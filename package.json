@@ -1,0 +1,13 @@
+{
+  "name": "pa11y",
+  "version": "1.0.0",
+  "description": "pa11y testing examples",
+  "scripts": {
+    "test:accessibility": "pa11y-ci --config .pa11yci.json"
+  },
+  "author": "Dominic Fraser",
+  "license": "ISC",
+  "devDependencies": {
+    "pa11y-ci": "^2.1.1"
+  }
+}

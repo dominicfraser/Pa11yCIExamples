@@ -1,0 +1,30 @@
+{
+    "standard": "WCAG2AAA",
+    "level": "error",
+    "defaults": {
+      "timeout": 20000,
+      "wait": 2000,
+      "ignore": []
+    },
+    "urls": [
+        {
+          "url": "http://pa11y.org/",
+          "viewport": { "width": 320, "height": 480 },
+          "actions": [
+            "wait for element .site-brand to be visible",
+            "screen capture screenshots-output/mobile-main-view.png",
+            "click element .site-nav__item button",
+            "screen capture screenshots-output/mobile-expand-menu.png"
+          ]
+        },
+        {
+          "url": "http://pa11y.org",
+          "viewport": { "width": 1280, "height": 1024 },
+          "actions": [
+            "wait for element .site-brand to be visible",
+            "screen capture screenshots-output/desktop-main-view.png"
+          ]
+        }
+    ]
+  }
+  
